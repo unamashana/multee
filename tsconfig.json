@@ -1,0 +1,26 @@
+{
+  "include": [
+    "src",
+    "packages",
+    "build-utils/config-helpers.ts",
+    "cypress/vite.config.ts",
+    "cypress/test.cy.ts"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "jsxImportSource": "@builder.io/mitosis",
+    "allowSyntheticDefaultImports": true,
+    "types": [
+      "cypress"
+    ],
+    "paths": {
+      "@/*": [
+        "./packages/react",
+        "./packages/solid",
+        "./packages/svelte",
+        "./packages/vue3"
+      ]
+    }
+  }
+}
